@@ -941,7 +941,11 @@ ul {
   }
 
   .plan-card__image {
-    aspect-ratio: 16 / 10;
+    aspect-ratio: 4 / 3;
+  }
+
+  .plan-card__image img {
+    object-position: top;
   }
 
   .plan-card__body {
