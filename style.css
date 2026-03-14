@@ -906,7 +906,7 @@ ul {
 }
 
 .features__number {
-  font-family: var(--font-en);
+  font-family: var(--font-display);
   font-size: 2.8rem;
   font-weight: 700;
   color: var(--color-blue-gray);
@@ -925,7 +925,7 @@ ul {
 
 .features__desc {
   font-size: 0.9rem;
-  color: var(--text-gray);
+  color: var(--text-light);
   line-height: 1.8;
 }
 
@@ -975,7 +975,7 @@ ul {
 
 .faq__q-label,
 .faq__a-label {
-  font-family: var(--font-en);
+  font-family: var(--font-display);
   font-size: 1.1rem;
   font-weight: 700;
   color: var(--color-blue-gray);
@@ -1014,7 +1014,7 @@ ul {
 
 .faq__answer p {
   font-size: 0.88rem;
-  color: var(--text-gray);
+  color: var(--text-light);
   line-height: 1.9;
 }
 
