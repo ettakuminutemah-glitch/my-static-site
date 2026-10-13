@@ -1431,3 +1431,25 @@ ul {
   .campaign-band__text small { display: block; margin-left: 0; }
   .fixed-cta__btn--tel { flex: 0 0 auto; padding: 10px 14px; }
 }
+
+
+/* ==========================================================
+   v4 追加分（2026-10）: 最初の画面の作り直し
+   ========================================================== */
+.hero__brand { font-family: var(--font-display); font-size: clamp(1.4rem, 3vw, 1.9rem); letter-spacing: 0.08em; font-weight: 300; margin-bottom: 18px; }
+.hero__brand span { display: block; font-family: var(--font-serif); font-size: 0.42em; letter-spacing: 0.22em; margin-top: 4px; opacity: 0.9; }
+.hero__headline { font-family: var(--font-serif); font-weight: 500; font-size: clamp(1.7rem, 4.6vw, 3rem); letter-spacing: 0.08em; line-height: 1.5; margin-bottom: 14px; text-shadow: 0 2px 18px rgba(0,0,0,0.25); }
+.hero__lead { font-size: clamp(0.88rem, 1.6vw, 1.05rem); letter-spacing: 0.06em; line-height: 1.9; margin-bottom: 26px; opacity: 0.95; }
+.hero__campaign { display: inline-block; max-width: 520px; padding: 16px 26px; margin-bottom: 24px; border: 1px solid rgba(255,255,255,0.65); border-radius: 8px; background: rgba(0,0,0,0.28); color: #fff; text-decoration: none; backdrop-filter: blur(4px); }
+.hero__campaign-label { display: block; font-family: var(--font-serif); font-size: 0.8rem; letter-spacing: 0.2em; color: var(--color-gold-light); margin-bottom: 6px; }
+.hero__campaign-main { display: block; font-size: clamp(1rem, 2vw, 1.25rem); letter-spacing: 0.06em; }
+.hero__campaign-main strong { font-size: 1.25em; font-weight: 700; white-space: nowrap; }
+.hero__campaign-note { display: block; font-size: 0.74rem; opacity: 0.85; margin-top: 6px; line-height: 1.6; }
+.hero__cta { font-size: 1rem; padding: 20px 44px; box-shadow: 0 8px 28px rgba(6,199,85,0.35); }
+@media (max-width: 600px) {
+  .hero { min-height: 640px; }
+  .hero__headline { letter-spacing: 0.04em; }
+  .hero__lead { font-size: 0.86rem; letter-spacing: 0.02em; }
+  .hero__campaign { padding: 14px 16px; }
+  .hero__cta { width: 100%; max-width: 340px; padding: 18px 16px; font-size: 0.92rem; }
+}
