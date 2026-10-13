@@ -1397,3 +1397,37 @@ ul {
   .hero__tag { letter-spacing: 0.14em; }
   .br-sp { display: inline; }
 }
+
+
+/* ==========================================================
+   v3 追加分（2026-10）: campaign band / gallery / tel button
+   ========================================================== */
+.campaign-band { display: flex; align-items: center; justify-content: center; gap: 14px; flex-wrap: wrap; padding: 14px 24px; background: var(--color-blue-gray-dark); color: #fff; text-decoration: none; font-size: 0.88rem; letter-spacing: 0.04em; transition: var(--transition-fast); }
+.campaign-band:hover { background: #5d6f7d; }
+.campaign-band__label { font-family: var(--font-serif); font-size: 0.78rem; letter-spacing: 0.14em; padding: 3px 12px; border: 1px solid rgba(255,255,255,0.6); border-radius: 50px; }
+.campaign-band__text { font-weight: 500; }
+.campaign-band__text small { margin-left: 10px; font-weight: 400; font-size: 0.76rem; opacity: 0.85; }
+.campaign-band__more { font-size: 0.78rem; opacity: 0.9; }
+
+.gallery { padding: 100px 0; background: var(--color-white); }
+.gallery .section-title-en { font-family: var(--font-serif); font-size: clamp(1.3rem, 3vw, 1.9rem); letter-spacing: 0.12em; }
+.gallery__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+.gallery__item { margin: 0; overflow: hidden; border-radius: 4px; aspect-ratio: 3 / 4; background: var(--color-ivory); }
+.gallery__item img { width: 100%; height: 100%; object-fit: cover; object-position: center 20%; display: block; transition: transform 0.6s ease; }
+.gallery__item:hover img { transform: scale(1.03); }
+.gallery__note { text-align: center; margin-top: 28px; font-size: 0.88rem; color: var(--text-medium); line-height: 1.9; }
+.gallery__actions { text-align: center; margin-top: 20px; }
+
+.fixed-cta__btn--tel { background: #fff; color: var(--text-dark); }
+.fixed-cta__btn--tel:hover { background: var(--color-ivory); }
+
+@media (max-width: 900px) {
+  .gallery__grid { grid-template-columns: repeat(3, 1fr); gap: 8px; }
+}
+@media (max-width: 600px) {
+  .gallery { padding: 72px 0; }
+  .gallery__grid { grid-template-columns: repeat(2, 1fr); gap: 6px; }
+  .campaign-band { gap: 6px 10px; padding: 12px 16px; font-size: 0.8rem; }
+  .campaign-band__text small { display: block; margin-left: 0; }
+  .fixed-cta__btn--tel { flex: 0 0 auto; padding: 10px 14px; }
+}
